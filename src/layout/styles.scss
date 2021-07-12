@@ -1,0 +1,29 @@
+.default-layout {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+    min-height: 80vh;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media (max-width: 767px) {
+  .default-layout {
+    footer {
+      font-size: 1rem;
+    }
+  }
+}
