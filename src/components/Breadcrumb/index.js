@@ -1,12 +1,16 @@
 import React from 'react';
-import { Breadcrumb } from 'react-bootstrap';
+import { Breadcrumb, Row, Col } from 'react-bootstrap';
 
 const PageBreadcrumb = ({ page }) => {
   return (
-    <Breadcrumb>
-      <Breadcrumb.Item href='#'>Home</Breadcrumb.Item>
-      <Breadcrumb.Item href='#'>{page}</Breadcrumb.Item>
-    </Breadcrumb>
+    <Row>
+      <Col className='my-2'>
+        <Breadcrumb>
+          <Breadcrumb.Item href='#'>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href='#'>{page}</Breadcrumb.Item>
+        </Breadcrumb>
+      </Col>
+    </Row>
   );
 };
 

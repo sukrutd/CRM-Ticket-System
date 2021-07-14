@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
-const TicketTable = ({ tickets }) => {
+const TicketTable = ({ tickets = [] }) => {
   return (
     <Table bordered striped size='sm' responsive='sm'>
       <thead>
