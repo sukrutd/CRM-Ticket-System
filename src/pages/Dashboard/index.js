@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import NewTicketButton from 'components/NewTicketButton';
 import Breadcrumb from 'components/Breadcrumb';
 import TicketTable from 'components/TicketTable';
@@ -10,7 +11,9 @@ const Dashboard = () => {
   return (
     <Container>
       <Breadcrumb page='Dashboard' />
-      <NewTicketButton />
+      <Link to='/add-ticket'>
+        <NewTicketButton />
+      </Link>
       <Row>
         <Col className='text-center my-2'>
           <div className='mb-1'>Total Tickets: 50</div>

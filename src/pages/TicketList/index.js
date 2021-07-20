@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Breadcrumb from 'components/Breadcrumb';
 import NewTicketButton from 'components/NewTicketButton';
 import TicketTable from 'components/TicketTable';
@@ -28,7 +29,9 @@ const TicketList = () => {
 
       <Row>
         <Col sm={6}>
-          <NewTicketButton />
+          <Link to='/add-ticket'>
+            <NewTicketButton />
+          </Link>
         </Col>
         <Col sm={6} className='text-right'>
           <SearchForm searchString={searchString} changeHandler={changeHandler} />

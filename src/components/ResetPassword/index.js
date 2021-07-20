@@ -24,7 +24,7 @@ const ResetPassword = ({ switchForm }) => {
     <Container>
       <Row>
         <Col>
-          <h1 className='text-info text-center'>Reset Password</h1>
+          <h2 className='text-info text-center'>Reset Password</h2>
           <hr />
           <Form autoComplete='off' onSubmit={submitHandler}>
             <Form.Group>
@@ -38,7 +38,7 @@ const ResetPassword = ({ switchForm }) => {
               />
             </Form.Group>
 
-            <Button type='submit' block>
+            <Button variant='info' type='submit' block>
               Reset Password
             </Button>
           </Form>

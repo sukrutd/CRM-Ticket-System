@@ -38,7 +38,7 @@ const LoginForm = ({ switchForm }) => {
     <Container>
       <Row>
         <Col>
-          <h1 className='text-info text-center'>Login</h1>
+          <h2 className='text-info text-center'>Login</h2>
           <hr />
           <Form autoComplete='off' onSubmit={submitHandler}>
             <Form.Group>
@@ -63,7 +63,7 @@ const LoginForm = ({ switchForm }) => {
               />
             </Form.Group>
 
-            <Button type='submit' block>
+            <Button variant='info' type='submit' block>
               Login
             </Button>
           </Form>

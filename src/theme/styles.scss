@@ -2,6 +2,9 @@
 $font-size-base: 1.1rem;
 $navbar-padding-y: 1rem;
 $breadcrumb-padding-x: 0;
+$navbar-dark-color: #ffffff;
+$navbar-dark-hover-color: #fde2e2;
+$navbar-dark-active-color: #fde2e2;
 
 @import '~bootswatch/dist/lux/variables';
 @import '~bootstrap/scss/bootstrap';
