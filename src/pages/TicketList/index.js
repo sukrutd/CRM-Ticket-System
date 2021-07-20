@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import PageBreadcrumb from 'components/Breadcrumb';
+import Breadcrumb from 'components/Breadcrumb';
 import NewTicketButton from 'components/NewTicketButton';
 import TicketTable from 'components/TicketTable';
 import SearchForm from 'components/SearchForm';
@@ -24,7 +24,7 @@ const TicketList = () => {
 
   return (
     <Container>
-      <PageBreadcrumb page='Ticket List' />
+      <Breadcrumb page='Ticket List' />
 
       <Row>
         <Col sm={6}>

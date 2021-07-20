@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import AddTicketForm from 'components/AddTicketForm';
-import PageBreadcrumb from 'components/Breadcrumb';
+import Breadcrumb from 'components/Breadcrumb';
 
 const initialFormData = {
   subject: '',
@@ -24,7 +24,7 @@ const AddTicket = () => {
 
   return (
     <Container>
-      <PageBreadcrumb page='New Ticket' />
+      <Breadcrumb page='New Ticket' />
 
       <Row>
         <Col className='my-2'>

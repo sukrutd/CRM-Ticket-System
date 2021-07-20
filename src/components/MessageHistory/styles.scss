@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+  .message-history {
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      & > .sender {
+        text-align: right;
+      }
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    & > .sender {
+      flex: 1 0 auto;
+    }
+
+    & > .message {
+      flex-basis: 75%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .message-history {
+    .sender {
+      margin-bottom: 1rem;
+    }
+  }
+}

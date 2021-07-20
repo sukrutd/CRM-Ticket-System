@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import NewTicketButton from 'components/NewTicketButton';
-import PageBreadcrumb from 'components/Breadcrumb';
+import Breadcrumb from 'components/Breadcrumb';
 import TicketTable from 'components/TicketTable';
 import tickets from 'assets/data/tickets.json';
 import './styles.scss';
@@ -9,7 +9,7 @@ import './styles.scss';
 const Dashboard = () => {
   return (
     <Container>
-      <PageBreadcrumb page='Dashboard' />
+      <Breadcrumb page='Dashboard' />
       <NewTicketButton />
       <Row>
         <Col className='text-center my-2'>

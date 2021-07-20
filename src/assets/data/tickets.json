@@ -3,7 +3,19 @@
     "id": 1,
     "subject": "Email certificate expired",
     "status": "Pending",
-    "addedAt": "2020-09-23"
+    "addedAt": "2020-09-23",
+    "history": [
+      {
+        "date": "2020-09-23",
+        "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "messageBy": "Client"
+      },
+      {
+        "date": "2020-09-24",
+        "message": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "messageBy": "Operator"
+      }
+    ]
   },
   {
     "id": 2,
