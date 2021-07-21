@@ -18,12 +18,12 @@ const Header = () => {
         <Navbar.Toggle aria-controls='top-navbar' />
         <Navbar.Collapse id='top-navbar'>
           <Nav className='ml-auto'>
-            <LinkContainer to='/dashboard'>
-              <Nav.Link>Dashboard</Nav.Link>
+            <LinkContainer exact to='/dashboard'>
+              <Nav.Link active={false}>Dashboard</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to='/tickets'>
-              <Nav.Link>Tickets</Nav.Link>
+            <LinkContainer exact to='/tickets'>
+              <Nav.Link active={false}>Tickets</Nav.Link>
             </LinkContainer>
 
             <Nav.Link onClick={logOutHandler}>Logout</Nav.Link>

@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 import Breadcrumb from 'components/Breadcrumb';
 import MessageHistory from 'components/MessageHistory';
 import UpdateTicket from 'components/UpdateTicket';
 import tickets from 'assets/data/tickets.json';
 
-const ticket = tickets[0];
-
 const Ticket = () => {
+  const { tid: ticketId } = useParams();
+  const [ticket, setTicket] = useState({});
+  const { subject = '', status = '', addedAt = '', history: messageHistory = [] } = ticket;
+
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    setTicket(tickets.find((item) => item.id === ticketId) || {});
+  }, [ticketId]);
 
   const submitHandler = () => {};
 
@@ -27,7 +34,7 @@ const Ticket = () => {
           Subject:
         </Col>
         <Col sm={8} md={9}>
-          {ticket.subject}
+          {subject}
         </Col>
       </Row>
 
@@ -36,7 +43,7 @@ const Ticket = () => {
           Reported on:
         </Col>
         <Col sm={8} md={9}>
-          {ticket.addedAt}
+          {addedAt}
         </Col>
       </Row>
 
@@ -45,13 +52,13 @@ const Ticket = () => {
           Status:
         </Col>
         <Col sm={8} md={9}>
-          {ticket.status}
+          {status}
         </Col>
       </Row>
 
       <Row className='my-2'>
         <Col>
-          <MessageHistory messageHistory={ticket.history} />
+          <MessageHistory messageHistory={messageHistory} />
         </Col>
       </Row>
 

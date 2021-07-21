@@ -21,10 +21,10 @@ function App() {
           <PrivateRoute path='/add-ticket'>
             <AddTicket />
           </PrivateRoute>
-          <PrivateRoute path='/tickets'>
+          <PrivateRoute exact path='/tickets'>
             <TicketList />
           </PrivateRoute>
-          <PrivateRoute path='/tickets/:tid'>
+          <PrivateRoute exact path='/tickets/:tid'>
             <Ticket />
           </PrivateRoute>
         </Switch>
